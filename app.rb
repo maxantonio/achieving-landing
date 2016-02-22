@@ -1,8 +1,22 @@
+require 'sinatra'
+require 'i18n'
+require 'better_errors' if development?
+
+configure :development do
+  use BetterErrors::Middleware
+  BetterErrors.application_root = __dir__
+end
+
+
+
+
+
+# Globales
 
 get '/' do
-  erb :index
+  erb (I18n.locale.to_s + '/index').to_sym
 end
 
-get '/ninja' do
-    "Hello Wzczxcorld!"
-end
+
+
+                                                              # HELPER
