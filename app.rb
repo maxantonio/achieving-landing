@@ -14,8 +14,7 @@ end
 # Globales
 
 get '/' do
-  #erb (I18n.locale.to_s + '/index').to_sym
-  erb :index
+  erb (I18n.locale.to_s + '/index').to_sym
 end
 
 
