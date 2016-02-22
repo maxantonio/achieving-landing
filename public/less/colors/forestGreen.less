@@ -1,0 +1,1161 @@
+/*
+ * VARIABLES 
+ */ 
+@background:       #fff;                        // section background color
+@background-1:     #F6F6F6;
+
+@main-color:        #3AC353;                    // page important color
+@light-color-text:  rgb(102, 102, 102);  
+@white-text:        #fff;
+
+
+@background-0-90:  fade(@background, 90%);
+@main-d-1:         darken(@main-color, 15%);
+@main-l-1:         fade(@main-color, 69%);
+@border-color:     #EEEEF3;
+
+
+@import "../../bootstrap/less/variables.less";
+
+
+// INPUT FORM PLACEHOLDER COLOR   
+.placeholder-color( @value ) {
+    &::-webkit-input-placeholder {
+        color:              @value !important;
+    }
+    &:-moz-placeholder {
+        color:              @value !important;
+    }
+    &::-moz-placeholder {
+        color:              @value !important;
+    }
+    &:-ms-input-placeholder {
+        color:              @value !important;
+    }
+}
+
+
+
+
+/*
+ * ======================================
+ * Defult CSS 
+ * ======================================
+ */
+
+body{
+    color:              @light-color-text;
+}
+
+p{
+    color:              @light-color-text;
+}
+
+
+.overlay-color {
+    background-color: rgba(0, 0, 0, 0.69);
+}
+
+.section-heading {
+    
+    &:after {
+        background-color: @main-color;
+    }
+}
+
+/**
+ * ============================
+ * Button style
+ * ============================
+ */
+.btn-top {
+    &:hover,
+    &:active,
+    &:focus {
+        color: @main-color;
+    }
+}
+
+/* Button left */
+.btn-left {
+    &:before {
+        background: @main-color;
+    }
+}
+
+
+
+/**
+ * ==============================
+ * Header Nav Style
+ * ==============================
+ */
+
+.header-nav {
+    ul {
+        li{
+            &.active {
+                a{
+                    background-color: @main-color !important;
+                }
+            }
+            
+            a {
+                background-color: fade(@main-color, 80%);
+                
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: @main-color !important;
+                }
+                
+                &:after {
+                    background-color: @main-color;
+                }
+                &:before {
+                    background-color: @main-color !important;
+                }
+            }
+        } 
+    }
+}
+
+
+
+/**
+ * ==========================
+ * Header Contant style
+ * ==========================
+ */
+.header-body {
+    img {
+        background-color: @main-color;
+    }
+}
+
+
+
+/**
+ * ==========================
+ * Map and Contact style
+ * ==========================
+ */
+#map_contact {
+    background-color: @background;
+}
+
+#map-btn {
+    color: @main-color;
+    
+    &:hover,
+    &:focus {
+        color: @main-color;
+    }
+}
+
+
+.contact-maps-box{
+    background-color: fade(@background, 90%);
+    
+    .btn {
+        border-color: @main-color !important;
+        color: @main-color;
+        
+        &:after {
+            background: @main-color;
+        }
+    }
+}
+
+
+
+/**
+ * ======================================
+ * From Input Field Style
+ * ======================================
+ */
+.form-cus {
+    border-color: @main-color;
+    
+    &:focus {
+        border-color: @main-color;
+    }
+}
+
+
+
+
+/**
+ * ======================================
+ * Social Icon Style
+ * ======================================
+ */
+
+.social-icon {
+    ul {
+        li {
+            a {
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: @main-color;
+                }
+            }
+        }
+    }
+}
+
+.contact-address {
+    .address-ul {
+        a {
+            color: @light-color-text;
+
+            &:hover, 
+            &:active,
+            &:focus {
+                color: @main-color;
+            }
+        }
+    }
+}
+
+
+/*
+ ********************************
+ *
+ *  Pricing Tables CSS
+ *
+  *  
+ */
+
+ #pricing-table{
+    background: @background;
+ }
+
+.table-single{
+    background-color: @background-1;
+
+    .popular {
+        background-color: @main-color;
+
+        &:after {
+            border-top-color: @main-color;
+        }
+    }
+
+
+    .meta-heading {
+        color: @light-color-text;
+    }
+    
+    .meta-price {
+        color: @light-color-text;
+    }
+    
+    ul{
+        li{
+            color: @light-color-text;
+        }
+    }
+
+    .btn {
+        border-color: @light-color-text;
+        color: @light-color-text;
+    }
+
+    &:hover{
+        .btn {
+            border-color: @main-color !important;
+            color: @main-color;
+            
+            &:after {
+                background: @main-color !important;
+            }
+        }
+        .meta-heading {
+            //border-color: @main-color;
+        }
+        .meta-price {
+            color: @main-color;
+        }
+    }
+}
+
+
+/**
+ * ================================
+ * TESTIMONIALS 
+ * ================================
+ */
+.testimonials {
+    color: @light-color-text;
+
+    figure {
+        img {
+            border: 1px solid @light-color-text;
+        }
+    }
+}
+
+.synced .name{
+    color: @main-color !important;
+}
+
+
+
+
+/**
+ * ========================================
+ * Subscription and contact  "MESSAGE"
+ * ========================================
+ */
+.subscription-success, .email-success{
+    color: @main-color !important;
+}
+
+
+/**
+ * ==================================
+ *   Subscription Form
+ * ==================================
+ */
+
+.news_letter-bg {
+    background-color: @background-1;
+}
+
+.subscribe-form-inner {
+    .input-group {
+        border-color: @main-color;
+    }
+    button{     
+        border-left-color: @main-color; 
+        color: @main-color;
+
+        &:focus {
+            color: @main-color;
+        }
+    }
+}
+
+
+/**
+ * ==================================
+ * Our Work
+ * ==================================
+ */
+ #our-work {
+    background-color: @background;
+}
+
+.zoom-gallery {
+    a {
+        &:after {
+            background-color: fade(@main-color, 69%);
+        }
+    }
+}
+
+
+
+/**
+ * ==================================
+ * Hover defut effect css
+ * ==================================
+ */ 
+.grid{
+    figure{
+        figcaption {
+            background: fade(@main-color, 69%);
+
+            a {
+                &:hover,
+                &:focus {
+                    color: @main-color !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ====================================
+ * Speakers CSS
+ * ====================================
+ */
+
+.speakers{
+    background: @background-1;
+}
+
+
+.speakers-body{
+    .item{
+        p{
+            color: @light-color-text;
+        }
+        h3{
+            color: @main-color;
+        }
+    }
+}
+
+
+
+/**
+ * ====================================
+ * Owl Carousel Slider Pagination Custom Style
+ * ====================================
+ */
+.owl-page{
+    &.active {
+        border-color: @main-color;
+        span{
+            background-color: @main-color !important;
+        }
+    }
+}
+
+
+
+/**
+ * ===================================
+ * Footer Style
+ * ===================================
+ */
+
+footer {
+    .footer-body{
+        .social-icon {
+            .btn {
+                border-color: @main-color !important;
+                color: @main-color;
+                
+                &:after {
+                    background: @main-color;
+                }
+            }
+        }
+
+        .copyright {
+            p .fa{
+                border-left-color: @light-color-text;
+            }
+        }
+    }
+ }
+
+
+/**
+ * ===================================
+ * Sponsors Style
+ * ===================================
+ */
+
+#sponsore{
+    background-color: @background-1;
+
+    ul {
+        li {
+            a {
+                border: 1px solid @background-1;
+                background-color: @background;
+            }
+            .btn {
+                &:hover,
+                &:active,
+                &:focus {
+                    border: 1px solid @background-1;
+                }
+
+                &:after {
+                    background-color: @background-1 !important;
+                }
+            }
+        }
+    }
+}
+
+.become-a-sponsor {
+    a {
+        color: @light-color-text;
+        
+        &:hover {
+            color: @main-color;
+        }
+    }
+}
+
+
+
+/**
+ * ===============================
+ * Our Featured Style
+ * ===============================
+ */
+
+#our-featured {
+    background-color: @background;
+}
+
+
+
+/**
+ * ===============================
+ * Two cols description width image slider
+ * ===============================
+ */
+.two-cols-description-with-slider {
+    background-color: @background;
+}
+
+.description-info-inner {
+    ul {
+        li {
+            &:before {     
+                color: @main-color;
+            }
+        }
+    }
+}
+
+
+/**
+ * ========================================
+ * Read Me More Button Style
+ * ========================================
+ */
+.btn-read-more {
+    color: @main-color;
+    border-left-color: @main-color;
+
+    &:before {
+        background-color: @main-color;
+    }
+}
+
+
+
+/**
+ * ========================================
+ * Two cols description width image
+ * ========================================
+ */
+.two-cols-description-with-image {
+    background-color: @background;
+}
+
+
+
+/**
+ * =========================================
+ * Flex Slider 
+ * =========================================
+ */
+ .flexslider {
+    .flex-direction-nav {
+        .btn-left {
+            &:hover,
+            &:active{
+                color: @main-color !important;
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * =========================================
+ * Collapse CSS
+ * =========================================
+ */
+
+// Collapse variable
+@collapse: @background; 
+@collapse-1: @background-1; 
+
+
+#collapse-area{
+    background-color: @collapse-1;
+}
+
+.collapse-tab {
+    .panel{
+        .panel-heading{
+            background: @collapse-1;
+            
+            .panel-title{
+                a{
+                    background-color: @collapse;
+                }
+
+                a.collapsed{
+                    background-color: @collapse-1 !important;
+                    border-bottom-color: @border-color;
+                }
+
+            }
+            
+        }
+    }
+    
+    
+    .panel-collapse{
+        background-color: @collapse;
+
+        .panel-body{
+            background-color: @collapse;
+        }
+    } 
+}
+
+
+/**
+ * ====================================
+ * Register Form Style
+ * ====================================
+ */
+.register-background {
+    background-color: @background;
+}
+
+#register {
+    
+}
+
+.register-form{
+    select{
+        border-color: @main-color;
+
+        &:focus {
+            border-color: @main-color;
+        }
+
+        option{
+            background-color: #fff;
+            //padding: 10px 5px;
+
+            &:hover {
+                background: @main-color !important;
+            }
+        }
+    }
+
+    .btn {
+        border-color: @main-color;
+        color: @main-color;
+
+        &:after {
+            background-color: @main-color;
+        }
+    }
+}
+
+
+/**
+ * =============================
+ * Schedule Style
+ * =============================
+ */
+.schedule {
+    background-color: @background-1;
+    .schedule-day {
+        li {
+            a {
+                &:hover,
+                &:active {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+
+    .schedule-hall {
+        background-color: @background-1;
+
+        li {
+            a {
+                &:hover,
+                &:active {
+                    color: @main-color;
+                }
+
+                &::after {
+                    background-color: @main-color;
+                }
+            }
+
+        }
+    }
+
+    .schedule-day,
+    .schedule-hall {
+        li {
+            a {
+                color: @light-color-text;
+
+                &:hover,
+                &:active {
+                    color: @main-color;
+                }
+            }
+
+        }
+
+        .active{
+            a {
+                color: @main-color;
+
+                &:hover,
+                &:active {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+}
+
+// Schedule variable
+@collapse-2: @background-1; 
+@collapse-3: @background; 
+
+.schedule-hall {
+    .line-h {
+        background-color: @main-color;
+        border-left-color: @background-1;
+    }
+    .panel{
+        .panel-heading{
+            background: @collapse-3;
+            
+            .panel-title{
+                .panel-title-a, a{
+                    background-color: @collapse-3;
+                }
+                .rotate {
+                    background-color: @collapse-2 !important;
+                }
+                a.collapsed{
+                    background-color: @collapse-3 !important;
+                }
+            }
+        }
+    }
+    .panel-collapse{
+        background-color: @collapse-2;
+
+        .panel-body{
+            background-color: @collapse-2;
+
+            h4 {
+                color: @light-color-text;
+            }
+
+            p{
+                color: @light-color-text;
+            }
+        }
+    }
+
+    .panel-title-a, a {
+        .detail {
+            .headline {
+                color: @main-color;
+            }
+            .name {
+                &:before {
+                    color: @light-color-text;
+                }
+            }
+            .company,
+            .name {
+                color: @light-color-text;
+            }
+        }
+        .time {
+            color: @main-color;
+
+            .collapse-icon {
+                background-color: @main-color;
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ===================================
+ * Count Down Style
+ * ===================================
+ */
+.countdown-background {
+    background-color: @background-1;
+}
+
+.countdown,
+.countdown-up {
+    .count_down {
+        .background {
+            .counter,
+            .title {
+                color: @main-color;
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ==================================
+ * Blog Section Style
+ * ==================================
+ */
+.blog-section {
+    background-color: @background;
+}
+
+.blog-post-demo {
+    .thumbnail {
+        background-color: @background-1;
+
+        .caption {
+            a {
+                color: @main-color;
+
+
+                &:hover {
+                    .date-of-post {
+                        color: @main-color;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.defult-use-btn {
+    .btn {
+        color: @main-color;
+        border-color: @main-color;
+
+        &:after {
+            background-color: @main-color;
+        }
+    }
+}
+
+footer {
+    background-color: @background-1;
+}
+
+
+
+
+
+/** 
+ * ========================================================
+ * ============================================================
+ * Blog Style
+ * ============================================================
+ * ========================================================
+ */
+
+/**
+ * ===================================
+ * Blog Header Style
+ * ===================================
+ */
+.blog-body {
+    background-color: @background;
+}
+
+
+
+/**
+ * ===================================
+ * Blog Post Body Left Side Style
+ * ===================================
+ */
+.bolg-body-left {
+    nav {
+        .pagination {
+            li {
+                .btn {
+                    border-color: @main-color;
+                    color: @main-color;
+
+                    &:after {
+                        background-color: @main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Post text Detail */
+.post-detail {
+    h3,
+    h3 a {
+        color: @main-color;
+    }
+    .post-option {
+        span {
+            color: @light-color-text;
+        }
+
+        a {
+            color: @light-color-text;
+
+            &:hover {
+                color: @main-color;
+            }
+        }
+    }
+}
+
+
+/**
+ * ==================================
+ * Side Bar Style
+ * ==================================
+ */
+
+
+/* Search Form Style */
+.search {
+    .subscribe-form-inner {
+        input {
+            color: @light-color-text !important;
+            .placeholder-color(@light-color-text);
+        }
+    }
+}
+
+
+.post-counter{
+    a {
+        color: @light-color-text;
+
+        &:hover {
+            color: @main-color;
+        }
+    }
+}
+
+.tags {
+    .title {
+        background-color: @background-1;
+        color: @light-color-text;
+
+        &:hover {
+            color: @main-color;
+        }
+    }
+}
+
+.recent-post {
+    a {
+        &:hover {
+            p {
+                color: @main-color;
+
+                span {
+                    color: @light-color-text;
+                }
+            }
+        }
+    } 
+}
+
+
+
+
+
+/** 
+ * ========================================================
+ * ============================================================
+ * Blog Single Page Style
+ * ============================================================
+ * ========================================================
+ */
+
+.heading {
+    .post-detail {
+        .post-option,
+        .date, 
+        .comment,
+        .by {
+            a {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+}
+
+.blog-message-form {
+    .btn {
+        border-color: @main-color;
+        color: @main-color;
+
+        &:after {
+            background-color: @main-color;
+        }
+    }
+}
+
+
+
+.comment-option {
+    a {
+        color: @light-color-text;
+    }
+    
+    .reply,
+    .like,
+    .dislike {
+        &:hover,
+        &:active {
+            color: @main-color;
+        }
+    }
+}
+
+
+
+
+
+
+/**
+ * ===================================
+ * ===========================================
+ * Style 2
+ * ===========================================
+ * ===================================
+ */
+
+
+/**
+ * ================================
+ * Navbar Style 2
+ * ================================
+ */
+.header-nav-2 {
+    .navbar-header {
+        .navbar-toggle {
+            border-color: @background;
+
+            .icon-bar {
+                background-color: @background;
+            }
+        }
+
+        a {
+
+            img {
+                background-color: @main-color !important;
+            }
+            
+            span {
+                border-color: transparent;
+            }
+        }
+    }
+
+    .nav {
+        li {
+            a {
+                &::after{
+                    background-color: @main-color;
+                }
+                
+            }
+        }
+    }
+
+    /* After Fixed In Top */
+    &.navbar-home {         
+        .navbar-header {
+            .navbar-toggle {
+                border-color: @main-color;
+
+                .icon-bar {
+                    background-color: @main-color;
+                }
+            }
+
+            a {
+                span {
+                    background-color: @background;
+                    border-left-color: @main-color;
+                    border-bottom-color: @main-color;
+                    border-right-color: @main-color;
+                }
+            }
+        }
+
+        .nav {
+            li {
+                a {
+                    color: @main-color;
+                }
+
+                .new-page {
+                    //background-color: @main-color;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: @main-color;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+
+
+
+
+@media (max-width: @screen-xs-max) {
+
+    /**
+     * ================================
+     * Navbar Style 2
+     * ================================
+     */
+    .header-nav-2 {
+        .nav {
+            li {
+                a {
+                    color: @main-color;
+                }
+            }
+        }
+
+        /* After Fixed In Top */
+        &.navbar-home {
+            .nav {
+                li {
+                    a {
+                        color: @main-color
+                    }
+
+                    .new-page {
+                        background-color: transparent;
+                        color: @main-color;
+                    }
+                }
+            }
+        }  
+    }
+}

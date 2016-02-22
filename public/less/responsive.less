@@ -1,0 +1,471 @@
+/**
+ * ======================================
+ * VARIABLES 
+ * ======================================
+ */
+@background:        #fff; // section background color
+@background-1:      #F6F6F6;
+
+@main-color:        #3AC353;
+@light-color-text:  rgb(102, 102, 102);
+@white-text:        #fff;
+
+
+@background-0-90:  fade(@background, 90%);
+@main-d-1:         darken(@main-color, 15%);
+@main-l-1:         fade(@main-color, 69%);
+@border-color: 	   #EEEEF3;
+
+
+
+@import "../bootstrap/less/variables.less";
+
+
+@media (max-width: @screen-xs-max) {
+
+	
+	
+	/**
+	 * =============================
+	 * Header Navbar Style
+	 * =============================
+	 */
+	.header-nav{
+		ul {
+			margin: 0 -15px !important;
+
+			li {
+				a {
+					margin-left: -135px;
+				}
+			}
+		}
+	} 
+
+
+	/**
+	 * =============================
+	 * Schedule Style
+	 * =============================
+	 */
+	.schedule-hall{
+		.line-h {
+		    right: 25px;
+		}
+		.panel-collapse {
+			.panel-body {
+				margin-left: 0px;
+
+				h4 {
+					margin-top: 25px;
+				}
+			}
+		}
+	}  
+
+
+	/**
+	 * =============================
+	 * Pricing Table Style
+	 * =============================
+	 */
+	.pricing-table {
+		margin-bottom: 10px;
+		
+		&:last-child {
+	 		margin-bottom: 0px;
+		}
+		
+		.meta-price {
+	        padding: 25px 0;
+	        font-family: "Montserrat", sans-serif;
+	        position: relative;
+	
+	        .meta-price-inner {
+	            position: relative;
+	            top: 0px;
+	        }
+		}
+		
+		.pricing-right {
+			text-align: center;
+			
+			.meta-heading,
+			ul li {
+				text-align: center;
+			}
+			
+		}
+
+	}
+
+
+
+	/**
+	 * =============================
+	 * Speakers Style
+	 * =============================
+	 */
+	.speakers-body{
+		.owl-carousel {
+			.owl-item {
+			    text-align: center;
+			    justify-content: center;
+			}
+		}
+	}
+
+
+
+	/**
+	 * ==============================
+	 * Our Work Style
+	 * ==============================
+	 */
+	#our-work {
+		.grid {
+			figure {
+				display: block;
+				margin: 0px auto;
+			}
+		}
+	}
+
+
+
+	/**
+	 * ===============================
+	 * Sponsore Style
+	 * ===============================
+	 */
+	#sponsore ul li a img {
+	    max-width: 100% !important ;
+	    margin: auto;
+	}
+
+
+
+	/**
+	 * ===============================
+	 * Subscribe Form Style
+	 * ===============================
+	 */
+	.news_letter_body {
+		form{
+		    button {
+			    padding: 20px 6px;
+			}
+		}
+	}
+
+
+	/**
+	 * ===============================
+	 * Two Cols Description with Image Style
+	 * ===============================
+	 */
+	.description-info-inner {
+	    padding: 75px 0 !important;
+	}
+
+
+	/**
+	 * ==============================
+	 * Footer Section Style
+	 * ==============================\*/
+	footer {
+		.section-separator {
+		    padding: 30px 0;
+		}
+	}
+	
+	
+	
+	
+	
+	/**
+	 * ==================================
+	 * =========================================
+	 * Blog Style
+	 * =========================================
+	 */
+	.blog-message-form {
+	    .padding-left,
+	    .padding-right {
+	        padding-left: 0px;
+	        padding-right: 0px;
+	    }
+	}
+
+
+
+
+	/**
+	 * ===================================
+	 * ===========================================
+	 * Style 2
+	 * ===========================================
+	 * ===================================
+	 */
+
+
+	/**
+	 * ================================
+	 * Navbar Style 2
+	 * ================================
+	 */
+	.header-nav-2 {
+		
+		.navbar-collapse {
+    		margin: auto;
+		    -webkit-transition: all 0.3s ease-out;
+		    -moz-transition: all 0.3s ease-out;
+		    -o-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+
+			&.in {
+			    border-top-color: rgba(255, 255, 255, 0.90);
+	    		background-color: rgba(255, 255, 255, 0.15) !important;
+	        	
+			}
+		}
+	    .navbar-header {
+	        a {
+	            img {
+	                width: 85px;
+	                padding: 10px;
+	                position: relative;
+	                z-index: 3;
+	            }
+	            
+	            span {
+	            	 padding: 48px 10px 10px 10px;
+	            }
+	        }
+	    }
+
+	    .nav {
+	        overflow: hidden;
+	        margin-top: 20px !important;
+	        margin-left: auto;
+	        margin-right: auto;
+	        
+	        li {
+	        	float: left;
+    			overflow: hidden;
+	            a {
+	                padding: 12px 22px !important;
+	            }
+	        }
+	    }
+
+	    /* After Fixed In Top */
+	    &.navbar-home {
+	    	background-color: rgba(255, 255, 255, 0.90) !important;
+
+	        .navbar-header {
+
+	            a {
+	                padding-top: 0px;
+
+	                img {
+	                    padding: 10px 10px 10px 10px;
+	                }
+	            }
+	        }
+
+	        .nav {
+	        	margin-top: 20px !important;
+
+	        	.new-page {
+                    color: #fff;
+
+                    &::after{
+                        -webkit-transform: translate3d(0,150%,0) !important;
+                        transform: translate3d(0,150%,0) !important;
+                    }
+
+                    &:hover {
+                        &::after{
+                            -webkit-transform: translate3d(0,95%,0) !important;
+                            transform: translate3d(0,95%,0) !important;
+                        }
+                    }
+                }
+	        }
+
+	        .navbar-collapse {
+	        	background-color: transparent;
+
+	        }
+	    }  
+	}
+	
+	
+	/* Hader Contant 2 */
+	.header-content-2 {
+	    h1 {
+	        .heading-tag-1,
+	        .heading-tag-2,
+	        .heading-tag-3 {
+	            display: inline-block;
+	            margin-bottom: 6px;
+	            padding: 0 15px;
+	        }
+	        .heading-tag-1 {
+	            background-color: #FF6868;//fade(@main-color, 40%);
+	        }
+	        .heading-tag-2 {
+	            background-color: #924992;//fade(@main-color, 90%);
+	        }
+	        .heading-tag-3 {
+	            background-color: #504077;//fade(@main-color, 70%);
+	        }
+	    }
+	}
+	
+	.btn-down-chack {
+	    padding: 0px 44px !important;
+	}
+	
+	
+}
+
+
+
+
+
+
+@media (max-width: @screen-sm-max) {
+	
+	/* Defult button Style */
+	.btn {
+	    padding: 13px 35px;
+	}
+	
+	/* Download Button Style */
+	.defult-use-btn .btn {
+	    padding: 13px 12px;
+	}
+
+	/**
+	 * =============================
+	 * Pricing Table Style
+	 * =============================
+	 */
+	.pricing-table {
+	 	&:first-child{
+	 		
+		}
+	}
+
+
+
+	/**
+	 * ===============================
+	 * Map and Contact Form Style
+	 * ===============================
+	 */
+	#map-btn {
+		display: none;
+	}
+	.map-map {
+	    position: relative;
+	    width: 100%;
+	    height: 350px;
+	    z-index: 1;
+	}
+	.contact-maps-box {
+	    position: relative;
+	    padding: 50px 5px;
+	    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+	    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+	}
+	#map_contact {
+		#map-btn-tab {
+		    position: relative;
+		    left: 0%;
+		    -webkit-transform: translate3d(0%, 0%, 0);
+		    transform: translate3d(0%, 0, 0);
+		}
+	}
+
+
+
+	/**
+	 * ===============================
+	 * Subscribe Form Style
+	 * ===============================
+	 */
+	.news_letter_body {
+		form{
+		    margin-left: 20px;
+		    margin-right: 20px;
+		}
+	}
+
+
+
+	/* Hader Contant 2 */
+	.header-content-2 {
+	    h1,
+	    p {
+	        text-align: center;
+	    }
+	
+	    .buy-tricket {
+	        text-align: left;
+	    }
+	    
+	    h1 {
+	    	text-align: center;
+	    	font-size: 30px;
+	    }
+	}
+
+
+
+	/**
+	 * ===============================
+	 * Two Cols Description with Image Style
+	 * ===============================
+	 */
+	 .two-cols-description-with-image {
+	 	.description-info,
+	 	.two-cols-description-image {
+	 		display: block !important;
+	    	float: none !important;
+	 	}
+	 	.two-cols-description-image {
+		    padding: 0 !important;
+
+		    img {
+			    height: auto;
+			    width: 100% !important;
+			    position: relative;
+		        max-width: 100%;
+		        min-height: 1px;
+			}
+		}
+	 }
+	
+
+
+	/**
+	 * ===============================
+	 * Two Cols Description with Slider Style
+	 * ===============================
+	 */
+	.two-cols-description-with-slider-body {
+		img {
+			height: auto;
+		    width: 100% !important;
+		    position: relative;
+	        max-width: 100%;
+	        min-height: 1px;
+		}
+	}
+    
+}
+
