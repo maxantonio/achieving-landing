@@ -7,15 +7,20 @@ configure :development do
   BetterErrors.application_root = __dir__
 end
 
-
-
-
+# Estableciendo el lenguaje por default
+# before '/' do
+#   I18n.locale = :es
+# end
 
 # Globales
-
 get '/' do
   erb (I18n.locale.to_s + '/index').to_sym
 end
+
+get '/es' do
+  erb 'es/index'.to_sym
+end
+
 
 
 
