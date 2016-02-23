@@ -43,10 +43,5 @@ get '/' do
   erb (I18n.locale.to_s + '/index').to_sym
 end
 
-get '/es' do
-  erb 'es/index'.to_sym
-end
-
-
 
                                                               # HELPER
