@@ -1,0 +1,22 @@
+.header-background-goal2 {
+    background: url('../images/portada1.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+    background-repeat: 'no-repeat';
+    background-color: #fff;
+}
+.news_letter-bg-goal2 {
+    background: url('../images/portada1-bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
