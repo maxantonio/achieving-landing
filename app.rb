@@ -22,21 +22,21 @@ end
 before '/' do
   I18n.locale = :en
 end
-
-before '/:locale' do
-  I18n.locale = (params[:locale].eql?('es') || params[:locale].eql?('en')) ? params[:locale] : :es
+before '/es' do
+  I18n.locale = :es
 end
 
+
 #Configuracion de email
-post '/:locale/archievingsubcription' do
+post '/achievingsubcription' do
   require 'pony'
 
-  from = "Formulario achieving.co"
-  subject = "Achieving user data"
+  from = "subcribe@archieving.com"
+  subject = "Archieving suscription"
 
   Pony.mail(
       :from => from,
-      :to => 'i@maxantonio.com',
+      :to => 'lovera@irstrat.com',
       :headers => {'Content-Type' => 'text/html'},
       :body => erb(:"en/generales/mail"),
       :via => :smtp,
