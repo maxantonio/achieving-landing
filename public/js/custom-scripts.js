@@ -514,7 +514,7 @@ $(function() {
         if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
             $.ajax({
                 type: "POST",
-                url: "sendmail.php",
+                url: "/achievingsubcription",
                 data: data,
                 success: function() {
                     $('.email-success').delay(500).fadeIn(1000);
