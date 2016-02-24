@@ -1,5 +1,5 @@
 $(function() {
-    
+
   'use strict';
 
   /**
@@ -57,7 +57,7 @@ $(function() {
 
   /**
    * =================================
-   * Animate Class Add 
+   * Animate Class Add
    * =================================
    */
   var animate_class_add = function() {
@@ -69,7 +69,7 @@ $(function() {
         .addClass('animated')
         .attr('data-wow-offset', '120')
         .attr('data-wow-duration', '1.5s');
-    });  
+    });
   }
 
 
@@ -87,7 +87,7 @@ $(function() {
     Slider_height_width();
 
   })
-  
+
 
   // jQuery Document Ready Function.
   $(document).on('ready', function() {
@@ -104,13 +104,13 @@ $(function() {
     // Call "resize_background" Function.
     //resize_background();
 
-    //Animate class 
+    //Animate class
     animate_class_add();
 
 
     /**
      * ======================================
-     *  STICKY NAVBAR 
+     *  STICKY NAVBAR
      * ======================================
      */
     //if ( matchMedia( 'only screen and (min-width: 768px)' ).matches ) {
@@ -119,7 +119,7 @@ $(function() {
 
           if( scrollPos > 20 ) {
              $('.navbar-fixed-top').addClass('navbar-home');
-          } 
+          }
           else {
              $('.navbar-fixed-top').removeClass('navbar-home');
           }
@@ -137,20 +137,20 @@ $(function() {
         var value = el.text();
         el.addClass('btn-left');
         el.html("<span class='section-name'>"+value+"</span>");
-        
+
     });
     $('.section-selector-2').each(function() {
         var el = $(this).find('a');
         var value = el.text();
         el.addClass('btn-bottom');
         el.html("<span class='section-name'>"+value+"</span>");
-        
+
     });
 
 
     /**
      * =======================================
-     * Navigation Style 1 open Button 
+     * Navigation Style 1 open Button
      * =======================================
      */
     $("#toggle-switcher").on('click', function() {
@@ -168,8 +168,8 @@ $(function() {
         $(this).find('i').addClass('fa-rotate-180');
       }
     });
-    
-    
+
+
     /**
      * =======================================
      * Map Hide and Show Button
@@ -177,19 +177,19 @@ $(function() {
      */
     $('#map-btn').on('click', function() {
         var el = $(this).find('i');
-        
+
         if( el.hasClass('fa-rotate-180') ){
             $(this).removeClass("active");
         el.removeClass('fa-rotate-180');
         $("#map-btn-tab").removeClass("contact-maps-outside");
-        
+
       }
       else{
           $(this).addClass("active");
         el.addClass('fa-rotate-180');
         $("#map-btn-tab").addClass("contact-maps-outside");
       }
-        
+
     });
 
 
@@ -230,7 +230,7 @@ $(function() {
 
     /**
      * ================================
-     * COLLAPSE ICON CHANGE 
+     * COLLAPSE ICON CHANGE
      * ===============================
      */
     var link = $('.panel-heading .panel-title a'),
@@ -277,7 +277,7 @@ $(function() {
       $('.btn-scroll-2').localScroll({
             offset: -Math.abs($('#navbar-nav-2').height())
       });
-          
+
     }else{
       $('#navbar-nav-2').localScroll({
           offset: -Math.abs($('.navbar-header').height())
@@ -288,7 +288,7 @@ $(function() {
             offset: -Math.abs($('.navbar-header').height())
       });
     }
-    
+
 
 
     /**
@@ -348,13 +348,13 @@ $(function() {
      * SMOOTH SCROLL / CURRENTLY ENABLED IN niceScroll
      * =======================================
      */
-    var scrollAnimationTime = 1200, 
+    var scrollAnimationTime = 1200,
         scrollAnimation = 'easeInOutExpo';
 
     $('a.scrollto').on('bind', 'click.smoothscroll', function (event) {
         event.preventDefault();
         var target = this.hash;
-        
+
         $('html, body').stop().animate({
             'scrollTop': $(target).offset().top
         }, scrollAnimationTime, scrollAnimation, function () {
@@ -367,7 +367,7 @@ $(function() {
      * =========================================
      * Count Down
      * =========================================
-     */       
+     */
     $('.count_down-1').countdown({
         end_time: "2015/10/21 14:27:28 +0600",
         wrapper: function(unit){
@@ -422,12 +422,12 @@ $(function() {
 
     /**
      * =============================================
-     * MAILCHIMP NEWSLETTER SUBSCRIPTION 
+     * MAILCHIMP NEWSLETTER SUBSCRIPTION
      * =============================================
      */
     $("#mailchimp-subscribe").ajaxChimp({
         callback: mailchimpCallback,
-        url: "http://deviserweb.us8.list-manage.com/subscribe/post?u=8035b74ecdb23c8ce0ccb094f&id=1a9b909143" // Replace your mailchimp post url inside double quote "".  
+        url: "http://deviserweb.us8.list-manage.com/subscribe/post?u=8035b74ecdb23c8ce0ccb094f&id=1a9b909143" // Replace your mailchimp post url inside double quote "".
     });
 
     function mailchimpCallback(resp) {
@@ -438,15 +438,15 @@ $(function() {
                 .fadeIn(1000);
 
             $('.subscription-failed').fadeOut(500);
-            
+
         } else if(resp.result === 'error') {
             $('.subscription-failed')
                 .html('<i class="fa fa-close"></i>' + "&nbsp;" + resp.msg)
                 .delay(500)
                 .fadeIn(1000);
-                
+
             $('.subscription-success').fadeOut(500);
-        }  
+        }
     };
 
 
@@ -498,7 +498,7 @@ $(function() {
 
     /**
      * ====================================
-     * Contact Form 
+     * Contact Form
      * ====================================
      */
     $("#contact").submit(function(e) {
@@ -509,7 +509,7 @@ $(function() {
             message: $("#contact-message").val()
         };
 
-        
+
 
         if ( isValidEmail(data['email']) && (data['message'].length > 1) && (data['name'].length > 1) ) {
             $.ajax({
@@ -533,7 +533,7 @@ $(function() {
 
     /**
      * =======================================
-     * CAROUSEL SLIDER 
+     * CAROUSEL SLIDER
      * =======================================
      */
     var owl = $("#slider");
@@ -632,11 +632,11 @@ $(function() {
 
   /**
    * =======================================
-   * GOOGLE MAP 
+   * GOOGLE MAP
    * =======================================
    */
   function init_map() {
-    var myLocation = new google.maps.LatLng(24.892467,91.87048);
+    var myLocation = new google.maps.LatLng(40.7658923,-73.9830354);
 
     var draggableValue;
       if($(document).width() <= 768){
@@ -649,31 +649,31 @@ $(function() {
     var mapOptions = {
       generate_controls : false,
       center: myLocation,
-      zoom: 16,
+      zoom: 12,
       mapTypeControl: true,           /*This option will hide map type.*/
       draggable: draggableValue,
       scaleControl: false,            //This option is used for disable zoom by scale.
       scrollwheel: false,             /*This option is used for disable zoom on mouse.*/
-      navigationControl: true,  
+      navigationControl: true,
       zoomControlOptions : {
         style : google.maps.ZoomControlStyle.SMALL,
       },
       styles: [{"stylers": [{"saturation": -100}]}],
-      streetViewControl: true  
-      
+      streetViewControl: true
+
     };
 
     var marker = new google.maps.Marker({
       position: myLocation,
       title:"Peggy Guggenheim Collection"});
-      
+
     var map = new google.maps.Map(document.getElementById("map"),
       mapOptions);
 
-    marker.setMap(map); 
+    marker.setMap(map);
   }
   google.maps.event.addDomListener(window, 'load', init_map);
- 
+
 });
 
 
@@ -707,5 +707,3 @@ $(window).load(function() {
   $('.next').addClass('btn btn-1 btn-left').html("<i class='fa fa-angle-right'></i>");;
 
 });
-
-
