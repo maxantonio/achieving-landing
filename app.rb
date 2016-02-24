@@ -62,4 +62,9 @@ get '/:locale' do
   erb (I18n.locale.to_s + '/index').to_sym
 end
 
+get '/:locale/7-steps-freelancer' do
+  erb (I18n.locale.to_s + '/7-steps-freelancer').to_sym
+end
+
+
 # HELPER
