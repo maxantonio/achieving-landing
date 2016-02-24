@@ -20,7 +20,7 @@ before '/:locale/*' do
 end
 
 before '/' do
-  I18n.locale = :es
+  I18n.locale = :en
 end
 
 before '/:locale' do
