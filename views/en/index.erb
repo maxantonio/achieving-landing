@@ -438,7 +438,7 @@
           <!-- End: Section Header -->
 
           <!-- Start: Subscribe Button area -->
-          <form id="mailchimp-subscribe" class="mailchimp-subscribe subscribe-form-inner wow fadeInDown">
+          <form id="mailchimp-subscribe" class="mailchimp-subscribe subscribe-form-inner wow fadeInDown" action="<%= I18n.locale%>/archievingsubcription" method="post">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
                 <p class="subscription-success"></p>
@@ -606,7 +606,7 @@
           <!-- End: .contact-us-left  -->
 
           <!-- Start: #contact  -->
-          <form id="contact">
+          <form id="contact" action="<%= I18n.locale%>/archievingsubcription" method="post">
 
             <!-- Contact Form Headline -->
             <p><strong></strong></p>
@@ -629,7 +629,7 @@
             </div>
 
             <div class="form-group">
-              <button class="btn btn-1 btn-top">Submit</button>
+              <button type="submit" class="btn btn-1 btn-top">Submit</button>
             </div>
 
           </form>
