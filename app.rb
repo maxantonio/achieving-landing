@@ -20,15 +20,15 @@ before '/:locale/*' do
 end
 
 before '/' do
+  I18n.locale = :en
+end
+before '/es' do
   I18n.locale = :es
 end
 
-before '/:locale' do
-  I18n.locale = (params[:locale].eql?('es') || params[:locale].eql?('en')) ? params[:locale] : :es
-end
 
 #Configuracion de email
-post '/:locale/archievingsubcription' do
+post '/achievingsubcription' do
   require 'pony'
 
   from = "subcribe@archieving.com"
