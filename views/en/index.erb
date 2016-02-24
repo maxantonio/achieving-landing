@@ -103,11 +103,11 @@
           <div class="collapse navbar-collapse" id="finiti-navbar-collapse">
             <ul id="navbar-nav-2" class="nav navbar-nav navbar-right">
               <!--  -->
-              <li class="section-selector-2"><a href="#header">Home</a></li>
+              <li class="section-selector-2"><a href="#header" onclick="ga('send', 'event','Achieving', 'click' ,'home-menu');">Home</a></li>
               <!-- <li class="section-selector-2"><a href="#schedule">Schedule</a></li> -->
-              <li class="section-selector-2"><a href="#two-cols-description-with-image">About</a></li>
-              <li class="section-selector-2"><a href="#pricing-table">Price</a></li>
-              <li class="section-selector-2"><a href="#map_contact">Specific paths</a></li>
+              <li class="section-selector-2"><a href="#two-cols-description-with-image" onclick="ga('send', 'event','Achieving', 'click' ,'home-about');">About</a></li>
+              <li class="section-selector-2"><a href="#pricing-table" onclick="ga('send', 'event','Achieving', 'click' ,'home-price');">Price</a></li>
+              <li class="section-selector-2"><a href="#map_contact" onclick="ga('send', 'event','Achieving', 'click' ,'home-spath');">Specific paths</a></li>
               <!-- <li class="section-selector-2"><a class="new-page blog" href="blog.html">Blog</a></li> -->
             </ul>
           </div>
@@ -159,7 +159,7 @@
                   </select>
                 </div>
                 <div class="form-group col-xs-12">
-                  <button class="btn btn-1 btn-top" id="subscribir" onclick="javascript:validaremail(this.form);"> Subscribe to beta</button>
+                  <button class="btn btn-1 btn-top" id="subscribir" onclick="javascript:validaremail(this.form); ga('send', 'event','Achieving', 'subscribe' ,'main1');"> Subscribe to beta</button>
                 </div>
 
               </div>
@@ -168,6 +168,9 @@
 
         </div>
         <!-- End: .col-md-6, .col-sm-12  -->
+        <div class="btn-scroll-2">
+                            <a class="btn-down-chack btn btn-1" href="#partner" onclick="ga('send', 'event','Achieving', 'click' ,'flecha-ver-completo');"><i class="fa fa-angle-down"></i></a>
+          </div>
 
       </div>
       <!-- End: .row .header-body .section-separator  -->
@@ -179,7 +182,10 @@
 </header>
 <!--End: Header Area
 ==============================-->
+<!-- inicia partner -->
 
+
+<!-- termina partnet -->
 
 <!-- Start: Schedule Area
 ==============================-->
@@ -201,7 +207,7 @@
 
       <!-- Download Button -->
       <div class="download-btn defult-use-btn">
-        <a href="#" class="btn btn-1 btn-top">Take the first step today<span>take action</span></a>
+        <a href="#" class="btn btn-1 btn-top" onclick="ga('send', 'event','Achieving', 'click' ,'tft1');">Take the first step today<span>take action</span></a>
       </div>
 
 
@@ -261,7 +267,7 @@
           <!-- End: .checklist -->
 
           <!-- Read More Button -->
-          <a href="#" class="btn btn-1 btn-left btn-read-more">Subscribe to test this concept</a>
+          <a href="#" class="btn btn-1 btn-left btn-read-more" onclick="ga('send', 'event','Achieving', 'click' ,'stc');">Subscribe to test this concept</a>
 
         </div>
 
@@ -316,7 +322,7 @@
           <!-- End: .checklist -->
 
           <!-- Read More Button -->
-          <a href="#" class="btn btn-1 btn-left btn-read-more">Subscribe to this path</a>
+          <a href="#" class="btn btn-1 btn-left btn-read-more" onclick="ga('send', 'event','Achieving', 'click' ,'tft1');">Subscribe to this path</a>
 
         </div>
 
