@@ -31,12 +31,12 @@ end
 post '/:locale/archievingsubcription' do
   require 'pony'
 
-  from = "subcribe@archieving.com"
-  subject = "Archieving suscription"
+  from = "Formulario achieving.co"
+  subject = "Achieving user data"
 
   Pony.mail(
       :from => from,
-      :to => 'lovera@irstrat.com',
+      :to => 'i@maxantonio.com',
       :headers => {'Content-Type' => 'text/html'},
       :body => erb(:"en/generales/mail"),
       :via => :smtp,
