@@ -479,7 +479,7 @@ $(function() {
         if ( isValidEmail(data['email']) ) {
             $.ajax({
                 type: "POST",
-                url: "subscribe/subscribe.php",
+                url: "/achievingsubcription",
                 data: data,
                 success: function() {
                     $('.subscription-success').fadeIn(1000);
