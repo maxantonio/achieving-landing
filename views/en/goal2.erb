@@ -613,7 +613,7 @@
           <!-- End: .contact-us-left  -->
 
           <!-- Start: #contact  -->
-          <form id="contact">
+          <form id="contact" name="form" method="post" action="/achievingsubcription">
 
             <!-- Contact Form Headline -->
             <p><strong></strong></p>
@@ -630,13 +630,13 @@
             </div>
 
             <div class="message col-md-12">
-              <p class="email-success"><i class="fa fa-check"></i> Your quote has successfully been sent.</p>
+              <p class="email-success"><i class="fa fa-check"></i> Your subscription has successfully been sent.</p>
 
               <p class="email-failed"><i class="fa fa-close"></i> Something went wrong!</p>
             </div>
 
             <div class="form-group">
-              <button class="btn btn-1 btn-top">Submit</button>
+              <button class="btn btn-1 btn-top" id="subscribir2" onclick="javascript:validaremail2(this.form);">Submit</button>
             </div>
 
           </form>
@@ -747,7 +747,19 @@
 
     }
 
+    function validaremail2(form) {
 
+        if (validateEmail(document.form.email.value) == false){
+
+            $('.email-failed').show();
+        }
+        else {
+            $('.email-success').show();
+
+            setTimeout(continueExecution, 1500);
+        }
+
+    }
     <!--validateEmail -->
     function validateEmail(email) {
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

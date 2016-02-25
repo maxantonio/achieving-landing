@@ -1,3 +1,10 @@
+<% if(params.has_key?(:ticket)) %>
 <p><%= "nombre: #{params[:name]}" %></p>
 <p><%= "email: #{params[:email]}" %></p>
 <p><%= "Asunto: #{params[:name]} solicita suscripción de tipo #{params[:ticket]} a  Archieving con el email #{params[:email]}" %></p>
+<% else %>
+    <p><%= "nombre: #{params[:name]}" %></p>
+    <p><%= "email: #{params[:email]}" %></p>
+    <p><%= "achieving: #{params[:menssage]}" %></p>
+
+<% end%>
