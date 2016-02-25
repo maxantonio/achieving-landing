@@ -1,0 +1,19 @@
+.header-background {
+    background: url('../images/freelancer-bg.jpg');
+    background-position: center 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #318c8c;
+}
+
+.header-content-2 h1 .heading-tag-1,.header-content-2 h1 .heading-tag-2,.header-content-2 h1 .heading-tag-3 {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.section-heading{
+    text-transform: none;
+}
+
+.section-header p{
+    text-align: justify;
+}
