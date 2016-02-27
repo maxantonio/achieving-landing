@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/reloader'
 require 'i18n'
 require 'better_errors' if development?
 
@@ -6,7 +7,6 @@ configure :development do
   use BetterErrors::Middleware
   BetterErrors.application_root = __dir__
 end
-
 
 # Configuracion de idioma
 I18n.enforce_available_locales = false
@@ -70,5 +70,9 @@ get '/:locale/goal2' do
   erb (I18n.locale.to_s + '/goal2').to_sym
 end
 
+get '/:locale/7-steps-freelancer2' do
+  @pageTitle = :freelancer
+  erb (I18n.locale.to_s + '/7-steps-freelancer2').to_sym, :layout => 'layouts/contenido'.to_sym
+end
 
 # HELPER

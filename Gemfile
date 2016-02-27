@@ -2,10 +2,12 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'i18n'
 gem 'pony'
-gem "sentry-raven"
+gem 'sentry-raven'
 
 
 group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  # Para no tener que recargar cuando hacemos cambios en el app.rb
+  gem 'sinatra-contrib'
 end
